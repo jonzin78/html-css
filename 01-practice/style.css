@@ -69,12 +69,24 @@ main
     font-size: 36px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin: 150px 0 70px;
 }
 
-.discussion h2::before {
-    border-bottom: 1px #1E1E1E solid;
-    width: 80px;
-    
+section .post {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 60px;
+    margin-bottom: 100px;
+}
+
+article a {
+    background-color: #F5F5F5;
+    padding: 6px 12px;
+    margin-right: 10px;
+}
+
+article p {
+    margin-bottom: 20px;
 }
 
 /*----------------
@@ -90,4 +102,16 @@ footer {
 
 footer .about {
     margin-bottom: 100px;
+}
+
+.about article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3列に分ける */
+    gap: 40px;
+    /* 各列の間隔 */
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    /* 中央寄せ + 下に余白 */
+    text-align: center;
 }
