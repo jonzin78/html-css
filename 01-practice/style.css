@@ -64,3 +64,30 @@ main
     font-weight: normal;
     line-height: 1;
 }
+
+.discussion h2 {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.discussion h2::before {
+    border-bottom: 1px #1E1E1E solid;
+    width: 80px;
+    
+}
+
+/*----------------
+footer
+----------------*/
+
+footer {
+    background-color: #1E1E1E;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+footer .about {
+    margin-bottom: 100px;
+}
