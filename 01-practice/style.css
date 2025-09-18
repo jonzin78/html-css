@@ -48,6 +48,7 @@ main
     width: 343px;
     padding: 40px 40px;
     background-color: #FFFFFF;
+    top: 50%;
     left: 100px;
 }
 
