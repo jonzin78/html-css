@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.btn {
+    padding: 10px 20px;
+    background-color: #256BE6;
+    color: #fff;
+}
+
+.btn--info {
+    background-color: #2DBE61;
+}
