@@ -177,7 +177,8 @@ payment ↓ */
 service.html
 --------------*/
 
-/* wedo */
+/*-----------------
+ wedo ↓ */
 
 .wedo {
     padding: 80px 0;
@@ -212,7 +213,8 @@ service.html
     margin: 40px auto 0;
 }
 
-/* offer */
+/*-----------------
+ offer ↓ */
 
 .offer {
     padding: 80px 0;
@@ -240,3 +242,124 @@ service.html
     margin-left: auto;
     margin-right: auto;
 }
+
+/*--------------------
+help.html
+-------------------*/
+
+
+/*---------------
+low ↓ */
+.low {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.low__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin: auto;
+}
+
+.low__info {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.low__info p {
+    margin-bottom: 40px;
+}
+
+.low__list {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 54px;
+}
+
+
+/*----------------
+question ↓ */
+
+.question {
+    padding: 80px 0;
+    background-color: #123D88;
+    color: #fff;
+    text-align: center;
+}
+
+.question__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin: auto;
+}
+
+.question__info {
+    max-width: 700px;
+    margin: auto;
+}
+
+.question__info .unit__title {
+    color: #fff;
+}
+
+.question__info .btn {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F87624;
+    border: none;
+}
+
+/*------------
+asked ↓ */
+
+.asked {
+    padding: 80px 0;
+}
+
+.asked__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asked__info {
+    width: 46%;
+    /* 552/1200*100 */
+}
+
+.asked__list {
+    width: 46%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    row-gap: 70px;
+}
+
+.asked__item {
+    padding: 40px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.asked__info p {
+    margin-bottom: 40px;
+}
+
+.asked a {
+    background-color: #256BE6;
+}
+
+.asked h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2F2F35;
+}
+
+/*---------------------------------------
+逆にしたい場合はflex-direction: row-reverse;を使ったほうがらくです。;-;
+---------------------------------------*/
