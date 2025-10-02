@@ -61,6 +61,54 @@ post ↓ */
   line-height: 1.2777777778;
 }
 
+/*-------------
+card ↓ */
+.card {
+  background-color: #fff;
+}
+.card__body {
+  padding: 35px;
+}
+.card__title {
+  margin-bottom: 15px;
+  color: #202124;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2777777778;
+}
+
+/*------------
+btn ↓ */
+.btn {
+  display: block;
+  width: 160px;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #fa6980;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.6666666667;
+  text-align: center;
+}
+.btn--info {
+  background-color: #202124;
+}
+.btn:hover {
+  background-color: #888;
+}
+
+/*-----------
+time ↓ */
+.time {
+  margin-top: 20px;
+  padding-left: 26px;
+  color: #bbb;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  background: url(../images/icon_time.png) no-repeat left center;
+}
+
 /* index.html
 ------------------*/
 /*----------

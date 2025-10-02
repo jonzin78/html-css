@@ -4,6 +4,7 @@ $color-text: #888;
 $color-accent: #fa6980;
 $color-main: #202124;
 $color-bg: #f6f6f6;
+$color-tips: #bbb;
 
 $font-family-base: Helvetica, Arial, sans-serif;
 
@@ -23,6 +24,14 @@ $font-family-base: Helvetica, Arial, sans-serif;
     font-weight: bold;
     line-height: math.div(31, 24);
     text-transform: uppercase;
+}
+
+@mixin title-sub() {
+    margin-bottom: 15px;
+    color: $color-main;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: math.div(23, 18);
 }
 
 body {
@@ -59,7 +68,7 @@ footer ↓ */
 .footer {
     padding: 100px 0 40px;
     background-color: $color-main;
-    color: #bbb;
+    color: $color-tips;
 
     &__inner {
         @include inner();
@@ -83,12 +92,59 @@ post ↓ */
     }
 
     &__title {
-        margin-bottom: 15px;
-        color: $color-main;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: math.div(23, 18);
+        @include title-sub();
     }
+}
+
+/*-------------
+card ↓ */
+
+.card {
+    background-color: #fff;
+
+    &__body {
+        padding: 35px;
+    }
+
+    &__title {
+        @include title-sub();
+    }
+}
+
+/*------------
+btn ↓ */
+
+.btn {
+    display: block;
+    width: 160px;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: $color-accent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: math.div(20, 12);
+    text-align: center;
+
+    &--info {
+        background-color: $color-main;
+    }
+
+    &:hover {
+        background-color: $color-text;
+    }
+}
+
+/*-----------
+time ↓ */
+
+.time {
+    margin-top: 20px;
+    padding-left: 26px;
+    color: $color-tips;
+    font-size: 12px;
+    line-height: math.div(20, 12);
+    background: url(../images/icon_time.png) no-repeat left center;
 }
 
 /* index.html
