@@ -89,10 +89,17 @@ post ↓ */
         font-size: 12px;
         font-style: oblique;
         line-height: math.div(20, 12);
+        color: $color-accent;
     }
 
     &__title {
         @include title-sub();
+
+        &--border {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
     }
 }
 
@@ -204,5 +211,55 @@ trending ↓ */
         .btn {
             margin-left: auto;
         }
+    }
+}
+
+/* about.html
+------------------*/
+/*--------------
+blog ↓ */
+
+.blog {
+    padding: 0 0 60px;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__list {
+        display: grid;
+        row-gap: 40px;
+    }
+
+    &__item {
+        .btn {
+            margin-left: auto;
+        }
+
+        // .post__title {
+        //     border-bottom: 1px solid #ddd;
+        // }
+    }
+}
+
+/*-------------
+discovery ↓ */
+
+.discovery {
+    padding: 60px 0;
+    background-color: $color-bg;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__title {
+        @include title-main();
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px percentage(math.div(40, 800));
     }
 }
