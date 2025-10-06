@@ -163,6 +163,16 @@ news ↓ */
     &__title {
         @include title-main();
     }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; // repeat(2, 1fr);
+        // column-gap: 40px;
+        // row-gap: 60px;
+        // gap:60px縦  40px横;
+        gap: 60px percentage(math.div(40, 800));
+        // row-gapはパーセンテージじゃなくてpxでやる
+    }
 }
 
 /*---------------
@@ -178,5 +188,21 @@ trending ↓ */
 
     &__title {
         @include title-main();
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; // repeat(2, 1fr);
+        // column-gap: 40px;
+        // row-gap: 60px;
+        // gap:60px縦  40px横;
+        gap: 60px percentage(math.div(40, 800));
+        // row-gapはパーセンテージじゃなくてpxでやる
+    }
+
+    &__item {
+        .btn {
+            margin-left: auto;
+        }
     }
 }

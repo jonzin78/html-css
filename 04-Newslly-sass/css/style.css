@@ -132,6 +132,11 @@ news ↓ */
   line-height: 1.2916666667;
   text-transform: uppercase;
 }
+.news__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 5%;
+}
 
 /*---------------
 trending ↓ */
@@ -154,5 +159,13 @@ trending ↓ */
   font-weight: bold;
   line-height: 1.2916666667;
   text-transform: uppercase;
+}
+.trending__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 5%;
+}
+.trending__item .btn {
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
