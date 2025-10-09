@@ -39,7 +39,7 @@ header ↓ */
 .gnav__list {
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between;
+  justify-content: end;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -82,6 +82,20 @@ spaces ↓ */
   align-items: center;
 }
 
+.btn {
+  display: block;
+  width: 200px;
+  background-color: #f85a47;
+  border-radius: 20px;
+  color: #dbffff;
+  text-align: center;
+  padding: 20px 30px;
+  margin-top: 60px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
 /*----------------
 reviews ↓ */
 .reviews {
@@ -103,6 +117,89 @@ reviews ↓ */
        column-gap: 6%;
 }
 
+.card {
+  border: 1px solid #a3a3a3;
+  /* 枠線の太さ・種類・色 */
+  border-radius: 8px;
+  /* 角を丸くする（任意） */
+  padding: 45px 40px;
+  /* 内側の余白 */
+  background-color: #fff;
+  /* 背景色（任意） */
+}
+.card__content {
+  margin-bottom: 80px;
+}
+
+.customer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+/*-----------------
+footer ↓ */
+.footer {
+  background-color: #DBFFFF;
+  padding: 110px 0;
+}
+.footer__inner {
+  max-width: 1000px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+
+.footer .gnav {
+  margin-bottom: 40px;
+}
+
 /* about.html
 -------------------*/
+/*-------------------
+office ↓ */
+.office__inner {
+  max-width: 1000px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 440fr 500fr;
+  -moz-column-gap: 6%;
+       column-gap: 6%;
+  align-items: center;
+  grid-auto-flow: revert;
+  order: 1;
+  margin-bottom: 120px;
+}
+.office__info {
+  order: 2;
+}
+
+/*------------
+information ↓ */
+.information__inner {
+  max-width: 1000px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.information__pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  margin-top: 60px;
+}
+.information__text {
+  margin-top: 20px;
+}
+
+.information .btn {
+  width: 300px;
+  margin-bottom: 120px;
+}
 /*# sourceMappingURL=style.css.map */
