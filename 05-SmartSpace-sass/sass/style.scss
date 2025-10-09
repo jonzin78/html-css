@@ -29,3 +29,103 @@ img {
     height: auto;
     vertical-align: bottom;
 }
+
+/* common
+---------------*/
+
+/*----------------
+header ↓ */
+
+.header {
+    &__inner {
+        @include inner();
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: math.div(24, 24);
+        letter-spacing: percentage(math.div(20, 1000));
+    }
+}
+
+.gnav {
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+}
+
+/*----------------
+unit ↓ */
+
+.unit {
+    &__catch {
+        margin-bottom: 20px;
+        color: $color-main;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: math.div(30, 18);
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        color: $color-heading;
+        font-size: 48px;
+        line-height: math.div(58, 48);
+    }
+
+    // 要素の中の一番最後の要素の下マージンを0にする
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* index.html
+-------------------*/
+/*-----------
+spaces ↓ */
+
+.spaces {
+    padding-bottom: 120px;
+
+    &__inner {
+        @include inner();
+        display: grid;
+        grid-template-columns: 440fr 500fr;
+        column-gap: percentage(math.div(60, 1000));
+        align-items: center;
+    }
+}
+
+/*----------------
+reviews ↓ */
+
+.reviews {
+    padding-bottom: 120px;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__info {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: percentage(math.div(60, 1000));
+    }
+}
+
+/* about.html
+-------------------*/
