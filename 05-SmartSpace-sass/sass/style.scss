@@ -62,6 +62,10 @@ header ↓ */
         justify-content: end;
         column-gap: 30px;
     }
+
+    &__item--active {
+        color: #ff9900;
+    }
 }
 
 /*----------------

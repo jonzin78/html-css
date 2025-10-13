@@ -43,6 +43,9 @@ header ↓ */
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+.gnav__item--active {
+  color: #ff9900;
+}
 
 /*----------------
 unit ↓ */
