@@ -169,3 +169,64 @@ img {
     height: auto;
     vertical-align: bottom;
 }
+
+//================================
+// common
+//================================
+
+.header {
+    padding: $space-xxl 0;
+
+    &__inner {
+        @include inner();
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: rem(24);
+        font-weight: bold;
+        line-height: math.div(29, 24);
+        letter-spacing: ls(100);
+    }
+}
+
+.gnav {
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: rem(30);
+    }
+
+    &__item {
+        font-size: rem(12);
+        line-height: math.div(14, 12);
+    }
+
+    &__active {
+        color: $color-main;
+    }
+}
+
+.footer {
+    padding: rem(80) 0;
+    background-color: $color-base;
+    color: #fff;
+    text-align: center;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__copy {
+        font-size: rem(12);
+        font-weight: bold;
+        line-height: math.div(20, 12);
+    }
+}
+
+//================================
+// index
+//================================
