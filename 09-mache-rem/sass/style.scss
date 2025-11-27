@@ -9,11 +9,13 @@ $space-xxl: 2.5rem; // 40px
 $space-xxxl: 3rem; // 48px
 
 // --- Colors ---
-$color-text: #000;
+$color-text: #5a5a5a;
 $color-base: #000;
-$color-main: #000;
+$color-main: #ED145B;
 $color-accent: #000;
-$color-bg: #000;
+$color-bg: #2b2b2b;
+$color-pb: #EDAA14;
+
 
 // --- Typography ---
 $font-size-base: 16;
@@ -27,3 +29,27 @@ $breakpoints: (
     "desktop": 640px,
     "philosophy":500px,
 );
+
+//===================================
+//mixin
+//===================================
+
+@mixin inner($mw: 1000px, $w: percentage(math.div(560, 640))) {
+    max-width: $mw;
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//==================================
+//header
+//==================================
+
+.header {
+    background-color: $color-bg;
+    display: grid;
+
+    &__inner {
+        @include inner();
+    }
+}
